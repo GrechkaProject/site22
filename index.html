@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #9400D3;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #9400D3;
+            padding: 10px 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        
+        nav a:hover {
+            font-weight: bold;
+        }
+        
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        
+        .project {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        
+        @media(max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav a {
+                padding: 5px 0;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Фото Артёма Ефремова" class="profile-img">
+            <h1>Артём Ефремов</h1>
+            <p>Администратор баз данных</p>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут Артём, я администратор баз данных с 18-летним опытом работы. Специализируюсь на администрировании баз данных.</p>
+            <p>В свободное время люблю работать курьером, что помогает мне находить вдохновение для новых проектов.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Программирование С# - Уровень: middle</li>
+                <li>Английский язык - Уровень: С2</li>
+                <li>Курьер - Уровень: БОГ</li>
+                <li>Готовка пельменей - Уровень: Непостижимо</li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>Мои проекты</h2>
+            
+            <div class="project">
+                <h3>Автопредприятие города</h3>
+                <p>Создание информационной системы для автопредприятия, главный разработчик.</p>
+                <p><a href="#">Ссылка на проект</a> | <a href="#">Исходный код</a></p>
+            </div>
+            
+            <div class="project">
+                <h3>Яндекс.Доставка</h3>
+                <p>Наладка сервисов для исполнения курьерства, бэкенд-разработчик.</p>
+                <p><a href="#">Ссылка на проект</a> | <a href="#">Исходный код</a></p>
+            </div>
+            
+        </section>
+        
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Email: <a href="mailto:temkabigboss228@example.com">temkabigboss228@example.com</a></p>
+            <p>Телефон: +7 (800) 555-35-35</p>
+            <p>
+                <a href="#">LinkedIn</a> | 
+                <a href="#">GitHub</a> | 
+                <a href="#">Behance</a>
+            </p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Мое Портфолио. Все права защищены.</p>
+    </footer>
+</body>
+</html>
